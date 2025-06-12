@@ -8,6 +8,9 @@ provider:
   timeout: 30
   iam:
     role: arn:aws:iam::891498524793:role/LabRole
+  environment:
+    BUCKET_NAME: ${sls:stage}-bucket-name 
+
 
 functions:
   lista_buckets:
